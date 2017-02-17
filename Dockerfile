@@ -8,6 +8,7 @@ RUN apt-get -y -q install libreoffice libreoffice-writer ure libreoffice-java-co
 RUN apt-get -y -q remove libreoffice-gnome
 EXPOSE 8997
 
-RUN adduser --home=/opt/libreoffice --disabled-password --gecos "" --shell=/bin/bash libreoffice
+RUN useradd -ms /bin/bash worker
+USER worker
 
 VOLUME ["/tmp"]
