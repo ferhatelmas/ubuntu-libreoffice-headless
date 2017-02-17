@@ -1,6 +1,6 @@
 ## Build Image
 
-> sudo docker build -t ubuntu-libreoffice-headless .
+> docker build -t ubuntu-libreoffice-headless .
 
 ## Convert office documents
 
